@@ -1,0 +1,421 @@
+/* 
+Theme Name: voidy
+Theme URI: http://www.diovo.com/links/voidy/
+Description: Voidy is a free wordpress theme, released by Diovo. Voidy is the perfect theme for your great blog. It is clean, clear and beautiful. It is minimalistic two-cloumn theme with the widgets all arranged in the right sidebar. Voidy was designed to make your content stand out and make everything else get out of the way. Check it out and you will fall in love with it.
+Version: 2.3.5
+Author: Niyaz PK
+Author URI: http://www.diovo.com/about/
+Tags: white, two-columns, fixed-width, theme-options, custom-menu, threaded-comments, translation-ready, silver, light, right-sidebar
+Last updated: 17:55 12-08-2010
+
+The CSS, XHTML and design is released under GPL: http://www.opensource.org/licenses/gpl-license.php
+*/
+
+/* Elements */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic);
+@import url(http://fonts.googleapis.com/css?family=Exo+2&subset=latin,cyrillic,latin-ext);
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: #333;	
+	background: url(../img/body_bg.jpg);
+}
+
+img.left{
+	float:left;
+	margin:0 1em 1em 0;
+}
+
+img.right {
+	float:right;
+	margin:0 0 1em 1em;
+}
+
+
+/*** Header ***/
+
+.header {
+	position: relative;
+	width: 100%;
+	background: url(../img/header_bg.jpg) repeat-x left top;
+	height: 150px;
+	background-size: auto 100%;
+}
+
+.header .pluso {
+	position: absolute;
+	top: 48px;
+    right: 30px;
+}
+
+.header .pluso-more {
+	display: none !important;
+}
+
+.header .pluso-counter {
+	display: none;
+}
+
+.header .headerTitle {
+	position: absolute;
+	top: 60px;
+	left: 30px;
+}
+
+.header .headerTitle a {
+	font-family: 'Exo 2', sans-serif;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 30px;
+    text-shadow: 2px 2px 3px #333;
+    text-decoration: none;
+}
+
+/*** End of Header ***/
+
+
+
+
+/*** Top Menu ***/
+
+.topMenu {
+	width: 100%;
+}
+
+.topMenu ul {
+	list-style: none;
+	margin: 0;
+	text-align: center;
+	padding-left: 23px;
+}
+
+.topMenu li {
+	display: inline;
+	padding: 14px 0 11px;
+	white-space: nowrap;
+	position: relative;
+	margin-right: 40px;
+}
+
+.topMenu a {
+	border: none;
+	color: #000;
+	font-size: 18px;
+	text-decoration: none;
+	line-height: 50px;
+}
+.topMenu a:hover, 
+.topMenu li.current_page_item a:hover {
+	border-bottom: 1px solid #000;
+}
+
+.topMenu ul ul {
+	background: none;
+	border: 1px solid #E5E5E5;
+}
+
+.topMenu ul ul li {
+	display: block;
+	padding: 0;
+	text-align: left;
+}
+
+.topMenu ul ul ul {
+	left:100% !important;
+	top:-1px  !important;
+}
+
+/*** End of Top Menu ***/
+
+
+
+
+
+/*** Left Box ***/
+
+.shadowBox {
+	background: #fff;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+.leftBox .shadowBox > h1,
+.leftBox .shadowBox > h2,
+.leftBox .shadowBox > h3 {
+	margin-top: 0;
+}
+
+.leftBox img {
+	max-width: 100%;
+	width: auto;
+	height: auto;
+}
+
+.leftBox .postBox .meta {
+	margin-bottom: 15px;
+}
+
+.leftBox .postBox a:hover {
+	color: #75A022;
+}
+
+.leftBox .block-title {
+	text-align: left;
+	font-size: 20px;
+	margin: 0;
+	font-weight: bold;
+	line-height: 1.1;
+}
+
+.leftBox .sample-posts ul {
+	padding: 0;
+}
+
+.leftBox .sample-posts li {
+	list-style: none;
+}
+
+.navigation {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.nav-page-num {
+	margin-top: 10px;
+}
+
+.page-numbers {
+	margin-left: 10px;
+}
+
+.page-numbers:hover {
+	font-weight: bold;
+}
+
+.page-numbers.current {
+	font-weight: bold;
+}
+
+/*** End of Left Box ***/
+
+
+
+
+
+
+/*** Comments ***/
+
+.comment-box ul.list {
+	margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.commentlist {
+	padding: 0;
+}
+
+.commentlist li {
+	list-style-type: none;
+}
+
+.comment-form > p > label,
+.comment-form > p > input[type=text],
+.comment-form > p > textarea {
+	display: block;
+}
+
+.comment-form > p > input[type=text],
+.comment-form > p > textarea {
+	width: 100%;
+}
+
+/*** End of Comments ***/
+
+
+
+
+
+
+/*** Right Box ***/
+
+.rightBox > ul > li {
+	background: #fff;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+.rightBox a:hover {
+	color: #75A022;
+}
+
+.rightBox img {
+	max-width: 100%;
+}
+
+.rightBox > ul > li {
+	background: #fff;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.rightBox ul {
+	margin: 0;
+	padding: 0;
+}
+
+.rightBox li {
+	list-style: none;
+}
+
+.rightBox h2 {
+	font-size: 20px;
+	margin: 0 0 10px;
+}
+
+.rightBox ul ul {
+	margin: 0;
+	padding: 0;
+}
+
+.rightBox ul ul ul {
+	margin: 0px 0 0 15px;
+	padding: 0;
+}
+
+.rightBox li li {
+	margin: 5px 0;
+	border-top: 1px dashed #888;
+	padding: 5px 0 0;
+}
+
+.rightBox li li:first-child {
+	border-top: none;
+}
+
+.rightBox .sidebarReview p {
+	margin-bottom: 10px;
+}
+
+.rightBox .sidebarReview .btn {
+	margin-top: 10px;
+}
+
+/*** End of Right Box ***/
+
+
+
+/* Footer */
+
+.footer {
+	text-align: center;
+}
+
+.footer p {
+	padding: 11px 11px 0;
+}
+
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.alignleft {
+	float: left;
+}
+
+.alignright {
+	float: right;
+}
+
+.textcenter {
+	text-align: center;
+}
+
+/*.wp-caption {
+	border: 1px solid #ddd;
+	text-align: center;
+	background-color: #f3f3f3;
+	padding-top: 4px;
+	-moz-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	margin-bottom: 10px;
+}
+
+.wp-caption-text {
+	font-size: 14px;
+}
+
+.wp-caption img {
+	margin: 0;
+	padding: 0;
+	border: 0 none;
+}
+
+.wp-caption-dd {
+	font-size: 11px;
+	line-height: 17px;
+	padding: 0 4px 5px;
+	margin: 0;
+}*/
+
+.tags {
+	color:#333;
+	font-size:0.8em;
+}
+
+.tags a {
+	color:#333;
+	border:0;
+}
+
+.newer-older {
+	text-align:center;
+}
+
+.newer-older a, .post .navigation a, .page .navigation a{
+	background-color:#F1F1F1;
+	color:#A1A1A1;
+	font-weight:bold;
+	padding:2px 10px 3px;
+	text-shadow:1px 1px 0 #FFFFFF;
+	font-size:13px;
+	-moz-border-radius:15px 15px 15px 15px;
+	border-radius:15px 15px 15px 15px;
+	-moz-box-shadow:1px 1px 0 #AAAAAA;
+	-webkit-box-shadow: #AAA 1px 1px 0px;
+}
+
+.newer-older a:hover, .post .navigation a:hover, .page .navigation a:hover{
+	background-color:#e7e7e7;
+	border: 0;
+}
+
+.post .navigation, .page .navigation {
+	padding:15px;
+	position:relative;
+	height:20px;
+}
+
+.post .navigation div, 
+.page .navigation div {
+	float: none;
+	display: inline;
+	position: absolute;
+}
+
+.post .navigation div.alignright, 
+.page .navigation div.alignright {
+	right:120px;
+}
+
+.post .navigation div.alignleft, 
+.page .navigation div.alignleft{
+	left:120px;
+}

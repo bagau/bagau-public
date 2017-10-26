@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8" />
+		<title>Как установить плагин для быстрого деплоя cksdev на Visual studio 2015 | Блог Рафиса Багаутдинова</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link type="text/css" rel="stylesheet" media="all" href="/css/total.css" />
+		
+		<link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.icon" />
+		<link rel="icon" href="/favicon.ico" type="image/gif" />
+	</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="header">
+					<div class="headerTitle">
+						<a href="/">Блог Рафиса Багаутдинова</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="topMenu">
+	
+		<a href="/" class="mobile-nav-link">Главная</a>
+	
+		<a href="/contacty" class="mobile-nav-link">Контакты</a>
+	
+</div>
+			</div>
+		</div>
+	<div class="row">
+	<div class="col-md-9">
+		<div class="leftBox">
+			<div class="postBox shadowBox">
+				<h1>Как установить плагин для быстрого деплоя cksdev на Visual studio 2015</h1>
+				<div class="meta">
+					Написано July 27, 2016
+					
+						в рубрику 
+						<a class="category-link" href="/categories/coding/">Кодинг</a>
+					
+				</div>
+				<div class="entry">
+					<p>Здравствуйте, читатели.</p>
+<p>Быстрый деплой в Visual studio нужен для того, чтобы делать быстрый деплой, так как когда правишь стили или яваскрипты не обязательно делать полный деплой.</p>
+<a id="more"></a>
+<p>Как поставить плагин cksdev на Visual studio 2015?</p>
+<ol>
+<li>Скачать на сайте <a href="https://cksdev.codeplex.com/" target="_blank" rel="external">https://cksdev.codeplex.com/</a> версию для 2013</li>
+<li>Скачать отттуда .vsix файл</li>
+<li>Переименовать ее в .cab</li>
+<li>Открываем архиватором, например 7-Zip</li>
+<li>Правим файл внутри архива: extension.vsixmanifest</li>
+<li>Там в этих строках меняем 13.0 на 15.0:<ul>
+<li>&lt;InstallationTarget Version=»[12.0,13.0)» Id=»Microsoft.VisualStudio.Pro» /&gt;</li>
+<li>&lt;InstallationTarget Version=»[12.0,13.0)» Id=»Microsoft.VisualStudio.Ultimate» /&gt;</li>
+<li>&lt;InstallationTarget Version=»[12.0,13.0)» Id=»Microsoft.VisualStudio.Premium» /&gt;</li>
+</ul>
+</li>
+<li>Сохраняем файл в архив</li>
+<li>Меняем расширение снова в .vsix</li>
+<li>Двойным кликом открываем файл и устанавливаем</li>
+</ol>
+<p>На этом все, быстрый деплой работает комбинацией клавиш Alt+C,C.</p>
+<p>Благодарю за внимание.</p>
+
+
+					<div class="tags">
+						
+					</div>
+				</div>					
+			</div>
+			<!-- <div class="comment-box shadowBox">
+				
+			</div> -->
+		</div>
+	</div>  
+	<div class="col-md-3">
+	<div class="rightBox">
+		<ul>
+			<li></li>
+		</ul>
+	</div>
+</div>
+</div>
+<div class="row">
+	<div class="col-md-9">
+		<div class="footer">
+			<p>
+				<strong>Блог Рафиса Багаутдинова</strong> Copyright &copy; 2013-<?php echo date('Y');?> Все права защищены.
+			</p>
+		</div>
+	</div>
+</div>
+		<script type="text/javascript" src="/js/total.js" defer></script>
+	</div>
+</body>
+</html>
