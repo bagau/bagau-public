@@ -46,23 +46,24 @@
 				</div>
 				<div class="entry">
 					<p>Здравствуйте, читатели.</p>
-<p>Быстрый деплой в Visual studio нужен для того, чтобы делать быстрый деплой, так как когда правишь стили или яваскрипты не обязательно делать полный деплой.</p>
+<p>Быстрый деплой в Visual studio нужен для того, чтобы делать быстрый деплой, так как когда правишь стили или яваскрипты не обязательно делать полный деплой.</p>
 <a id="more"></a>
-<p>Как поставить плагин cksdev на Visual studio 2015?</p>
+<p>Как поставить плагин cksdev на Visual studio 2015?</p>
 <ol>
-<li>Скачать на сайте <a href="https://cksdev.codeplex.com/" target="_blank" rel="external">https://cksdev.codeplex.com/</a> версию для 2013</li>
-<li>Скачать отттуда .vsix файл</li>
+<li>Скачать на сайте <a href="https://cksdev.codeplex.com/" target="_blank" rel="external">https://cksdev.codeplex.com/</a> версию для 2013</li>
+<li>Скачать отттуда .vsix файл</li>
 <li>Переименовать ее в .cab</li>
 <li>Открываем архиватором, например 7-Zip</li>
-<li>Правим файл внутри архива: extension.vsixmanifest</li>
-<li>Там в этих строках меняем 13.0 на 15.0:<ul>
-<li>&lt;InstallationTarget Version=»[12.0,13.0)» Id=»Microsoft.VisualStudio.Pro» /&gt;</li>
+<li>Правим файл внутри архива: extension.vsixmanifest</li>
+<li>Там в этих строках меняем 13.0 на 15.0:
+<ul>
+<li>&lt;InstallationTarget Version=»[12.0,13.0)» Id=»<a href="http://Microsoft.VisualStudio.Pro" target="_blank" rel="external">Microsoft.VisualStudio.Pro</a>» /&gt;</li>
 <li>&lt;InstallationTarget Version=»[12.0,13.0)» Id=»Microsoft.VisualStudio.Ultimate» /&gt;</li>
 <li>&lt;InstallationTarget Version=»[12.0,13.0)» Id=»Microsoft.VisualStudio.Premium» /&gt;</li>
 </ul>
 </li>
 <li>Сохраняем файл в архив</li>
-<li>Меняем расширение снова в .vsix</li>
+<li>Меняем расширение снова в .vsix</li>
 <li>Двойным кликом открываем файл и устанавливаем</li>
 </ol>
 <p>На этом все, быстрый деплой работает комбинацией клавиш Alt+C,C.</p>
