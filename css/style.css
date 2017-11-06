@@ -86,8 +86,8 @@ img.right {
 }
 
 .top-menu li {
-	display: inline;
-	padding: 14px 0 11px;
+	display: inline-block;
+	vertical-align: middle;
 	white-space: nowrap;
 	position: relative;
 	margin-right: 40px;
