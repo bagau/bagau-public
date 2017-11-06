@@ -78,18 +78,14 @@ img.right {
 
 /*** Top Menu ***/
 
-.topMenu {
-	width: 100%;
-}
-
-.topMenu ul {
+.top-menu ul {
 	list-style: none;
 	margin: 0;
+	padding: 0;
 	text-align: center;
-	padding-left: 23px;
 }
 
-.topMenu li {
+.top-menu li {
 	display: inline;
 	padding: 14px 0 11px;
 	white-space: nowrap;
@@ -97,32 +93,15 @@ img.right {
 	margin-right: 40px;
 }
 
-.topMenu a {
+.top-menu a {
 	border: none;
 	color: #000;
 	font-size: 18px;
 	text-decoration: none;
 	line-height: 50px;
 }
-.topMenu a:hover, 
-.topMenu li.current_page_item a:hover {
+.top-menu a:hover {
 	border-bottom: 1px solid #000;
-}
-
-.topMenu ul ul {
-	background: none;
-	border: 1px solid #E5E5E5;
-}
-
-.topMenu ul ul li {
-	display: block;
-	padding: 0;
-	text-align: left;
-}
-
-.topMenu ul ul ul {
-	left:100% !important;
-	top:-1px  !important;
 }
 
 /*** End of Top Menu ***/
